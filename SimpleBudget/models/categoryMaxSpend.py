@@ -1,6 +1,6 @@
 from django.db import models
-from django.contrib.auth.models import User
 from .category import Category
+from .auth import User
 
 
 class CategoryMaxSpend(models.Model):
@@ -11,3 +11,4 @@ class CategoryMaxSpend(models.Model):
     class Meta:
         ordering = ["max_spend"]
         verbose_name_plural = "CategoryMaxSpends"
+        unique_together = ('category', 'user',)

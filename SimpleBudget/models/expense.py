@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
+from .auth import User
 from .category import Category
 from .subCategory import SubCategory
 
@@ -14,3 +14,4 @@ class Expense(models.Model):
     class Meta:
         ordering = ["date"]
         verbose_name_plural = "Expenses"
+

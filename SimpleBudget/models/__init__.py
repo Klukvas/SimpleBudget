@@ -4,3 +4,4 @@ from .categoryMaxSpend import CategoryMaxSpend
 from .expense import Expense
 from .income import Income
 from .subCategory import SubCategory
+from .auth import User, UserManager

@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
+from .auth import User
 from .category import Category
 
 
@@ -12,3 +12,5 @@ class SubCategory(models.Model):
     class Meta:
         ordering = ["name"]
         verbose_name_plural = "SubCategories"
+        unique_together = ('name', 'user',)
+

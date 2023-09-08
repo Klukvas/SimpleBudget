@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
+from .auth import User
 
 
 class Account(models.Model):
@@ -11,3 +11,4 @@ class Account(models.Model):
     class Meta:
         ordering = ["isUsable"]
         verbose_name_plural = "Accounts"
+        unique_together = ('name', 'user',)
