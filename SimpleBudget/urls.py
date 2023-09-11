@@ -4,7 +4,8 @@ from .views import (
     LoginApiView,
     RegistrationAPIView,
     CategoryApiView,
-    SubCategoryApiView
+    SubCategoryApiView,
+    ExpenseApiView
 )
 
 urlpatterns = [
@@ -16,5 +17,7 @@ urlpatterns = [
 
     path('subcategory', SubCategoryApiView.as_view()),
     path('subcategory/<int:pk>', SubCategoryApiView.as_view()),
+
+    path('expense', ExpenseApiView.as_view())
 
 ]
