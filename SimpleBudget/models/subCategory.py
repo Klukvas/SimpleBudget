@@ -6,7 +6,7 @@ from .category import Category
 class SubCategory(models.Model):
     name = models.CharField()
     description = models.TextField(null=True)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='subCategories')
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     class Meta:

@@ -3,10 +3,9 @@ from SimpleBudget.models import Category
 
 
 class CategorySerializer(serializers.ModelSerializer):
+    subCategories = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
+
     class Meta:
         model = Category
-        fields = ['name', 'description']
+        fields = ['id', 'name', 'description', 'subCategories']
 
-    def create(self, validated_data):
-        Category.objects.create(**validated_data)
-        return validated_data
