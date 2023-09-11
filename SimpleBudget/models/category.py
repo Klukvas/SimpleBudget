@@ -3,7 +3,7 @@ from .auth import User
 
 
 class Category(models.Model):
-    name = models.CharField()
+    name = models.CharField(max_length=255)
     description = models.TextField(null=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 

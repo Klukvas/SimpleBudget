@@ -5,8 +5,8 @@ from .subCategory import SubCategory
 
 
 class Expense(models.Model):
-    category = models.OneToOneField(Category, on_delete=models.SET_DEFAULT, default='NoCategory')
-    subCategory = models.OneToOneField(SubCategory, on_delete=models.SET_DEFAULT, default='NoSubCategory')
+    category = models.OneToOneField(Category, on_delete=models.SET_DEFAULT, default=1)
+    subCategory = models.OneToOneField(SubCategory, on_delete=models.SET_DEFAULT, default=1)
     date = models.DateField(auto_now=True)
     amount = models.IntegerField()
     user = models.OneToOneField(User, on_delete=models.CASCADE)
