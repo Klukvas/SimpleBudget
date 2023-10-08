@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2395e984-7445-4bbc-9881-e004524774b7" name="Changes" comment="Start fe">
-      <change afterPath="$PROJECT_DIR$/frontend/simplebudget/src/components/addCategory/addCategory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/simplebudget/src/css/addCategory.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/simplebudget/src/service/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/simplebudget/src/service/categoryApi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/simplebudget/src/service/subCategoryApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SB.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/SimpleBudget/backends/JWTAuth.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/SimpleBudget/backends/JWTAuth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/SimpleBudget/serializers/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/SimpleBudget/serializers/category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/SimpleBudget/views/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/SimpleBudget/views/category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/SimpleBudget/views/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/SimpleBudget/views/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/SimpleBudget/views/subCategory.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/SimpleBudget/views/subCategory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/configs/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/configs/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/simplebudget/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/simplebudget/src/components/header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/simplebudget/src/css/auth/registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/simplebudget/src/css/auth/registration.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/simplebudget/src/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/simplebudget/src/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/simplebudget/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/simplebudget/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +118,7 @@
       <workItem from="1694456051192" duration="2982000" />
       <workItem from="1694681575730" duration="18255000" />
       <workItem from="1696432753814" duration="3060000" />
-      <workItem from="1696757707762" duration="17550000" />
+      <workItem from="1696757707762" duration="17674000" />
     </task>
     <task id="LOCAL-00001" summary="Start fe">
       <option name="closed" value="true" />
