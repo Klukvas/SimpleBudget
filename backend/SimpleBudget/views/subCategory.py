@@ -12,10 +12,14 @@ class SubCategoryApiView(APIView):
     permission_classes = (IsAuthenticated,)
     serializer_class = SubCategorySerializer
 
-    def get(self, request: Request):
+    def get(self, request: Request, pk: int = None):
+        if pk:
+            sub_category = SubCategory.objects.get(pk=pk)
+            serialized_sub_category = self.serializer_class(sub_category)
+            return Response(data=serialized_sub_category.data, status=status.HTTP_200_OK)
         available_subcategories = SubCategory.objects.filter(user=request.user)
-        serialized_categories = self.serializer_class(available_subcategories, many=True)
-        return Response(data=serialized_categories.data, status=status.HTTP_200_OK)
+        serialized_sub_categories = self.serializer_class(available_subcategories, many=True)
+        return Response(data=serialized_sub_categories.data, status=status.HTTP_200_OK)
 
     def post(self, request: Request):
         serializer = self.serializer_class(data=request.data)

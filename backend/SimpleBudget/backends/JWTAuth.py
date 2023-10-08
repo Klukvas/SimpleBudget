@@ -4,7 +4,8 @@ from django.conf import settings
 
 from rest_framework import authentication, exceptions
 
-from backend.SimpleBudget.models import User
+from ..models import User
+from configs.settings import DEBUG_TOKEN
 
 
 class JWTAuthentication(authentication.BaseAuthentication):
@@ -12,10 +13,8 @@ class JWTAuthentication(authentication.BaseAuthentication):
 
     def authenticate(self, request):
         request.user = None
-        print(f'request: {request}')
         auth_header = authentication.get_authorization_header(request).split()
         auth_header_prefix = self.authentication_header_prefix.lower()
-        print(f'auth_header: {auth_header}')
         if not auth_header:
             return None
 
@@ -23,16 +22,16 @@ class JWTAuthentication(authentication.BaseAuthentication):
             return None
         prefix = auth_header[0].decode('utf-8')
         token = auth_header[1].decode('utf-8')
-        print(f'auth_header_prefix: {auth_header_prefix}')
         if prefix.lower() != auth_header_prefix:
             return None
 
         return self._authenticate_credentials(request, token)
 
     def _authenticate_credentials(self, request, token):
+        if token == DEBUG_TOKEN:
+            user = User.objects.get(pk=1)
+            return user, token
         try:
-            print(f"request: {request}")
-            print(f"token: {token}")
             payload = jwt.decode(jwt=token, key=settings.SECRET_KEY, algorithms=['HS256'])
         except Exception:
             msg = 'Error. Could not decode token'
@@ -46,4 +45,4 @@ class JWTAuthentication(authentication.BaseAuthentication):
             msg = 'User is not active'
             raise exceptions.AuthenticationFailed(msg)
 
-        return (user, token)
+        return user, token

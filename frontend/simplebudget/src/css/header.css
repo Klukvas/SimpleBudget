@@ -1,32 +1,46 @@
 .header {
-  background-color: #007bff;
-  color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
 }
 
-.nav {
-  background: chocolate;
-  height: 82px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-self: stretch;
+.header img {
+    width: 100px;
+    height: auto;
 }
 
-.info{
-  background: darkgrey;
-  align-self: stretch;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.dropdowns {
+    display: flex;
+    gap: 10px;
 }
-.info-dropdowns{
-  display: flex;
-  flex-direction: row;
- }
-.auth{
-  background: darkgreen;
-  display: flex;
-  justify-content: flex-end;
-  align-self: stretch;
-  align-items: center;
+
+.dropdown {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signUpBtn{
+  background-color: #808080;
+  border-color: #007bff;
+  border-style: groove;
 }

@@ -5,48 +5,32 @@ import '../../css/header.css'
 class Header extends Component {
   render() {
     return (
-      <header className="header">
-        <nav className="nav">
-          <div className="info">
-            <div className="logo">SomeLogo</div>
-            <div className="info-dropdowns">
-              <div className="articles info-container">
-              <button className="article-dropdown">
-                Articles
-              </button>
-            </div>
-              <div className="calculator info-container">
-              <button className="article-dropdown">
-                Calculators
-              </button>
-            </div>
-              <div className="tips info-container">
-              <button className="tips-dropdown">
-                Guides & Tips
-              </button>
-            </div>
-            </div>
-          </div>
-          <div className="auth">
-            <div className="signIn">
-              <a href="#" className="signin-link"></a>
-              <div className="signIn">
-                <span className="authText">
-                  Sign in
-                </span>
-              </div>
-            </div>
-            <div className="signUp">
-              <a href="#" className="signup-link"></a>
-              <div className="signUp">
-                <span className="authText">
-                  Sign up
-                </span>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
+     <header>
+       <div className="header">
+          <img src="" alt="Logo"/>
+          <div className="dropdowns">
+            <select className="dropdown">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+            <select className="dropdown">
+                <option value="option4">Option 4</option>
+                <option value="option5">Option 5</option>
+                <option value="option6">Option 6</option>
+            </select>
+            <select className="dropdown">
+                <option value="option7">Option 7</option>
+                <option value="option8">Option 8</option>
+                <option value="option9">Option 9</option>
+            </select>
+        </div>
+          <div className="buttons">
+            <button className="signInBtn auth-btn">Sign in</button>
+            <button className="signUpBtn auth-btn">Sign up</button>
+        </div>
+        </div>
+     </header>
     );
   }
 }
