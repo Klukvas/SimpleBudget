@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2395e984-7445-4bbc-9881-e004524774b7" name="Changes" comment="Start fe">
-      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/simplebudget/src/components/addSubCategory/addSubCategory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/simplebudget/src/css/addCategoryPopUp.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/simplebudget/src/css/addSubCategory.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/simplebudget/src/css/components/button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/simplebudget/src/css/components/table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/SimpleBudget/views/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/SimpleBudget/views/category.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/simplebudget/src/components/addCategory/addCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/simplebudget/src/components/addCategory/addCategory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/simplebudget/src/components/auth/registration-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/simplebudget/src/components/auth/registration-form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/simplebudget/src/css/addCategory.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/simplebudget/src/css/addCategory.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/simplebudget/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/simplebudget/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/simplebudget/src/service/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/simplebudget/src/service/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/simplebudget/src/service/categoryApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/simplebudget/src/service/categoryApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/simplebudget/src/service/subCategoryApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/simplebudget/src/service/subCategoryApi.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +30,8 @@
       <list>
         <option value="SCSS File" />
         <option value="Python Script" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -118,7 +131,8 @@
       <workItem from="1694456051192" duration="2982000" />
       <workItem from="1694681575730" duration="18255000" />
       <workItem from="1696432753814" duration="3060000" />
-      <workItem from="1696757707762" duration="17674000" />
+      <workItem from="1696757707762" duration="18354000" />
+      <workItem from="1698243217210" duration="11580000" />
     </task>
     <task id="LOCAL-00001" summary="Start fe">
       <option name="closed" value="true" />

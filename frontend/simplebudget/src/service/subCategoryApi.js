@@ -2,7 +2,7 @@ import {Api} from "./api";
 
 export class SubCategoryApi extends Api{
   async getSubCategories(id){
-    const url = id ? `${this.getMainUrl()}/subcategory/${id}` : `${this.getMainUrl()}/subcategory/`
+    const url = id ? `${this.getMainUrl()}/subcategory/${id}` : `${this.getMainUrl()}/subcategory`
     const config = {
       url: url,
       method: 'get',

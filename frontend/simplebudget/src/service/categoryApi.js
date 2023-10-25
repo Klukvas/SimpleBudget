@@ -1,9 +1,10 @@
 import {Api} from "./api";
 
 export class CategoryApi extends Api{
-  async getCategories(){
+  async getCategories(id=null){
+    const url = id ? `${this.getMainUrl()}/category/${id}` : `${this.getMainUrl()}/category`
     const config = {
-      url: `${this.getMainUrl()}/category`,
+      url: url,
       method: 'get',
       headers: {
           'Authorization': 'token DEBUG_eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6LTEsImV4cCI6MTY5Njg0NjA0OH0.c11jnH2n4ej_FZcOiV2IU',

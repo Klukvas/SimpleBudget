@@ -1,0 +1,19 @@
+.sub-category {
+  font-family: Arial, sans-serif;
+  margin: 15px;
+
+}
+
+.create-container {
+  background-color: #555555;
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 20px;
+}
+
+.create-container > div{
+  display: flex;
+  margin-left: 10px;
+}
+
+

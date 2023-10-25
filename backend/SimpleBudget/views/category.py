@@ -12,7 +12,11 @@ class CategoryApiView(APIView):
     permission_classes = (IsAuthenticated,)
     serializer_class = CategorySerializer
 
-    def get(self, request):
+    def get(self, request: Request, pk: int = None):
+        if pk:
+            category = Category.objects.get(pk=pk)
+            serialized_category = self.serializer_class(category)
+            return Response(data=serialized_category.data, status=status.HTTP_200_OK)
         available_categories = Category.objects.filter(user=request.user)
         serialized_categories = self.serializer_class(available_categories, many=True)
         return Response(data=serialized_categories.data, status=status.HTTP_200_OK)

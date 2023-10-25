@@ -4,7 +4,6 @@ import {CategoryApi} from "../../service/categoryApi";
 import {SubCategoryApi} from "../../service/subCategoryApi";
 import settingsImg from '../../images/settings.png'
 
-
 class MyTableComponent extends Component {
   constructor(props) {
     super(props);
@@ -17,7 +16,8 @@ class MyTableComponent extends Component {
       newName: '',
       newDescription: '',
       loading: true,
-      showAlert: false
+      showAlert: false,
+      isFormVisible: false,
     };
   }
 
@@ -51,7 +51,6 @@ class MyTableComponent extends Component {
   }
 
   async handleAddClick(){
-    console.log('Click state', this.state)
 
     const { newName, newDescription } = this.state;
     if (newName) {
@@ -71,9 +70,6 @@ class MyTableComponent extends Component {
     this.setState({ newDescription: event.target.value });
   };
 
-  openCategorySettings(){
-
-  }
 
   render() {
     const { categories, loading, showAlert } = this.state;

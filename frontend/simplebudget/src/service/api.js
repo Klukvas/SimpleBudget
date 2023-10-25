@@ -11,7 +11,7 @@ export class Api{
         return response.data
       }
     }catch{
-      console.log(`Something went wrong with: ${config}`)
+      console.log(`Something went wrong with: ${JSON.stringify(config)}`)
     }
   }
 

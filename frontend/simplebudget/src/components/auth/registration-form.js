@@ -21,7 +21,6 @@ export class RegistrationForm extends React.Component{
   handleSubmit = (e) => {
     e.preventDefault();
     // Here, you can handle form submission, e.g., sending data to the server
-    console.log(this.state);
   };
 
   render() {
